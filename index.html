@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTM Parameter Extractor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>UTM Parameter Extractor</h1>
+    <p>Enter a competitor's URL to extract UTM parameters:</p>
+    <input type="text" id="urlInput" placeholder="Paste the competitor's URL here" />
+    
+    <div id="result" class="result">
+      <p id="errorMessage" class="error" style="display: none;">Please enter a valid URL with UTM parameters.</p>
+      <table id="utmTable" style="display: none;">
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
